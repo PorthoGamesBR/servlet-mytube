@@ -1,9 +1,8 @@
-# Título do projeto
+# Servidor de Vídeos Pessoal
 
-Um parágrafo da descrição do projeto vai aqui
+Um "seu"tube, que permite que você armazene os vídeos no HD do seu computador e os acesse de qualquer outro aparelho que tenha um navegador
 
-Nome do Dev Diary: {Titulo do Projeto}
-
+Feito em live na [Twitch](https://www.twitch.tv/porthogamesbr)
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
@@ -65,8 +64,6 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 Mencione as ferramentas que você usou para criar seu projeto
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
 
 ## 🖇️ Colaborando
 
@@ -74,14 +71,13 @@ Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoS
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos [Git](https://git-scm.com/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## ✒️ Autores
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Portho** - *Trabalho Inicial* - [Portho](https://github.com/PorthoGamesBR)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
