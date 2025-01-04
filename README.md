@@ -63,7 +63,7 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
+* [Tomcat](https://tomcat.apache.org/) - Servidor Web e de Aplicações Usado
 
 ## 🖇️ Colaborando
 

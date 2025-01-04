@@ -2,6 +2,6 @@ body {
     background-color: black;
 }
 
-h1 {
-    color: white
+h1#main-title  {
+    color: lightblue
 }
