@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>pagina_principal</servlet-name>
+    <servlet-class>PaginaPrincipal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pagina_principal</servlet-name>
+    <url-pattern>/mytube</url-pattern>
+  </servlet-mapping>
 </web-app>
