@@ -4,7 +4,7 @@ Pagina de visualização dos arquivos no meu servidor web
 
 # Partes do Projeto
 
-- Servidor : Um servidor Apache Tomcat com os seguintes servlets:
+- Servidor : Um servidor Apache Tomcat com os seguintes servlets, que serão feitos usando a API Servlet Javax:
     - Pagina principal (HTML)
     - Lista de videos que tem no servidor no momento (Microserviço, REST)
     - FTP para carregar os videos
