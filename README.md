@@ -27,10 +27,22 @@ Instalação do Maven
 Dar exemplos
 ```
 
-E repita:
+Criando o arquivo WAR
 
 ```
-Até finalizar
+    // Uma vez que tenha o Maven instalado, vá para a pasta mytube e execute o comando
+
+    mvn clean package
+
+    // Isso vai gerar uma pasta target, e dentro dessa pasta um arquivo com a extensão .war
+```
+
+Colocando a pagina pra rodar
+
+```
+    // Depois de gerar o war, deve colocá-lo no seu servidor java compatible.
+    // Como esse projeto foi feito com Apache Tomcat, coloque o .war no diretorio tomcat/webapps e a pasta resources tambem
+
 ```
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
