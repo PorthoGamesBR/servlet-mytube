@@ -8,9 +8,14 @@
     <servlet-name>pagina_principal</servlet-name>
     <servlet-class>PaginaPrincipal</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>pagina_principal</servlet-name>
     <url-pattern>/paginaprincipal</url-pattern>
   </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
