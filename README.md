@@ -11,11 +11,13 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Você vai precisar:
 
-```
-Dar exemplos
-```
+* Java Development Kit
+* Maven
+* Servidor Web ou de Aplicação Java-enabled. (recomendado Tomcat 9)
+
+_Sempre recomendo, ao instalar servidores, usar máquinas virtuais ou containers para não poluir sua máquina._
 
 ### 🔧 Instalação
 
