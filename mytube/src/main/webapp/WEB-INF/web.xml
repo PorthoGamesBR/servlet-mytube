@@ -13,4 +13,13 @@
     <url-pattern>/paginaprincipal</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>videos</servlet-name>
+    <servlet-class>Videos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>videos</servlet-name>
+    <url-pattern>/videos</url-pattern>
+  </servlet-mapping>
+
 </web-app>
