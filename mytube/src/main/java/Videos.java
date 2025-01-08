@@ -12,7 +12,7 @@ public class Videos extends HttpServlet {
 
         response.setContentType("video/mp4");
         ServletOutputStream out = response.getOutputStream();
-        FileInputStream fin = new FileInputStream(videoPath + videoName);
+        FileInputStream fin = new FileInputStream(videoPath + videoName.replace("+"," "));
 
         byte [] buf = new byte[4096];
         int read;
