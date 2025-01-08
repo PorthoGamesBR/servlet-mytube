@@ -39,14 +39,6 @@ Criando o arquivo WAR
     // Isso vai gerar uma pasta target, e dentro dessa pasta um arquivo com a extensão .war
 ```
 
-Colocando a pagina pra rodar
-
-```
-    // Depois de gerar o war, deve colocá-lo no seu servidor java compatible.
-    // Como esse projeto foi feito com Apache Tomcat, coloque o .war no diretorio tomcat/webapps e a pasta resources tambem
-
-```
-
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
@@ -71,12 +63,20 @@ Dar exemplos
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+
+Colocando a pagina pra rodar
+
+```
+    // Depois de gerar o war, deve colocá-lo no seu servidor java compatible.
+    // Como esse projeto foi feito com Apache Tomcat, coloque o .war no diretorio tomcat/webapps e a pasta resources tambem
+
+```
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
+* [Java](https://docs.oracle.com/en/java/) - Linguagem Usada
 * [Maven](https://maven.apache.org/index.html) - Gerenciador de Projeto Java
 * [Tomcat](https://tomcat.apache.org/) - Servidor Web e de Aplicações Usado
 
@@ -93,6 +93,7 @@ Nós usamos [Git](https://git-scm.com/) para controle de versão. Para as versõ
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **Portho** - *Trabalho Inicial* - [Portho](https://github.com/PorthoGamesBR)
+* **Todos** que me acompanham na live diariamente durante o desenvolvimento
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
