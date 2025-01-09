@@ -22,4 +22,12 @@
     <url-pattern>/videos</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>video_list</servlet-name>
+    <servlet-class>VideoList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>video_list</servlet-name>
+    <url-pattern>/video_list</url-pattern>
+  </servlet-mapping>
 </web-app>

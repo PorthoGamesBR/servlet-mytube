@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyTube</title>
     <link rel="stylesheet" href="resources/css/style.css">
-    <script src="/page/scripts/script.js"></script>
+    <script src="resources/js/script.js"></script>
 </head>
 <body>
     <header><h1 id="main-title">MyTube</h1></header>
     <main>
         <div class="flex-row">
             <div id="video-area">
-                <video controls width="1280">
-                    <source src="videos?video.mp4" type="video/mp4" />
+                <video controls width="1280" id="video-player">
+                    <source id="video-source" src="videos?video.mp4" type="video/mp4" />
                 </video>
                 <h1>Titulo</h1>
             </div>
@@ -39,5 +39,9 @@
         
     </main>
     <footer></footer>
+
+    <script>
+        getVideos();
+    </script>
 </body>
 </html>

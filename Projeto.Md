@@ -5,12 +5,13 @@ Pagina de visualização dos arquivos no meu servidor web
 # Partes do Projeto
 
 - Servidor : Um servidor Apache Tomcat com os seguintes servlets, que serão feitos usando a API Servlet Javax:
-    - Pagina principal (HTML)
+    - Pagina principal (HTML) [x]
     - Lista de videos que tem no servidor no momento (Microserviço, REST)
-    - FTP para carregar os videos
+    - Thumbnails
+    - FTP para carregar os videos [x]
 - Conexão : As portas IP do meu proprio PC e rede serão usadas. Para pegar o IP global atual do PC podemos usar alguma API ou serviço
 - Pagina : Pagina simples em HTML + CSS + JS
-    - script.js faz o request para conseguir a lista de videos do servidor e montar a lista de videos lateral
+    - script.js faz o request para conseguir a lista de videos do servidor e montar a lista de videos lateral, muda e da load na fonte do video ao clicar em um dos videos laterais
 
 # Como um servidor funciona
 
