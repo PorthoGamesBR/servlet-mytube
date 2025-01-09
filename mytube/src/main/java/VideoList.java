@@ -18,7 +18,7 @@ public class VideoList extends HttpServlet {
 
         jo.put("video_link", "videos?Onibus+vai+derrapar+a+a+a+a.mp4");
 		jo.put("miniature_link", "mini.jpg");
-		jo.put("tiulo", "Onibus vai derrapar a a a a");
+		jo.put("titulo", "Onibus vai derrapar a a a a");
 
         ja.put(jo);
 
