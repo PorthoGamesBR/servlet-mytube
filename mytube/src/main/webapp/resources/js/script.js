@@ -18,9 +18,21 @@ async function getVideos() {
 
 
       let videoList = document.getElementById("list-area");
-      listaDeVideos.forEach((element) => videoList.appendChild(
-        document.createElement('<div class="flex-row"><a href="javascript:openVideo('+ "'" + element["video_link"] + "'" + ')"><img class="miniature" src="' + element["miniature_link"] + '"><h2>' + element["titulo"] + '</h2></a></div>')
-      ));
+      
+      listaDeVideos.forEach((element) => {
+        let divListElement = document.createElement('div');
+        divListElement.setAttribute("class","flex-row");
+        let aVideoLink = document.createElement('a').setAttribute("href",```javascript:openVideo(${element["video_link"]})```);
+        let imgMiniature = document.createElement("img");
+        imgMiniature.setAttribute("class","miniature");
+        imgMiniature.setAttribute("src",element["miniature_link"]);
+        let h2Title = document.createElement("h2")
+        h2Title.innerHTML = element["titulo"]
+        aVideoLink.appendChild(imgMiniature);
+        aVideoLink.appendChild(h2Title);
+        divListElement.appendChild(aVideoLink);
+        videoList.appendChild(divListElement);
+    });
 }
 
 function openVideo(videoLink) {
