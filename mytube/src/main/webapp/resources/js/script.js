@@ -10,7 +10,7 @@ async function getVideos() {
           throw new Error(`Response status: ${response.status}`);
         }
         const json = await response.json();
-        listaDeVideos = json;
+        listaDeVideos = json["lista"];
         console.log(json);
       } catch (error) {
         console.error(error.message);
@@ -19,7 +19,7 @@ async function getVideos() {
       let videoList = document.getElementById("list-area");
       listaDeVideos.forEach((element) => videoList.appendChild(
         ```<div class="flex-row">
-                    <a href="javascript:openVideo('${videoLink}')">
+                    <a href="javascript:openVideo('${element["video_link"]}')">
                     <img class="miniature" src="${element["miniature_link"]}">
                     <h2>${element["titulo"]}</h2>
                     </a>
