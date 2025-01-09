@@ -16,14 +16,10 @@ async function getVideos() {
         console.error(error.message);
       }
 
+
       let videoList = document.getElementById("list-area");
       listaDeVideos.forEach((element) => videoList.appendChild(
-        document.createElement(```<div class="flex-row">
-                    <a href="javascript:openVideo('${element["video_link"]}')">
-                    <img class="miniature" src="${element["miniature_link"]}">
-                    <h2>${element["titulo"]}</h2>
-                    </a>
-                </div>```)
+        document.createElement('<div class="flex-row"><a href="javascript:openVideo' + ```("${element["video_link"]}")``` + ```><img class="miniature" src="${element["miniature_link"]}"><h2>${element["titulo"]}</h2></a></div>```)
       ));
 }
 
