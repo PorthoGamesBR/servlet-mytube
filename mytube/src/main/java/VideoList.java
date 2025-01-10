@@ -1,6 +1,9 @@
 import javax.servlet.http.*;
 import javax.servlet.*;
 import java.io.*;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,6 +11,7 @@ import org.json.JSONArray;
 
 public class VideoList extends HttpServlet {
 
+    public String videoPath = "/home/portho/Downloads/";
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
@@ -15,7 +19,7 @@ public class VideoList extends HttpServlet {
         JSONArray ja = new JSONArray();
         JSONObject toSend = new JSONObject();
         
-        String[] videoList = lerArquivosMP4("");
+        Set<String> videoList = lerArquivosMP4(videoPath);
 
         for (String videoName : videoList) {
             JSONObject jo = new JSONObject();
@@ -41,9 +45,11 @@ public class VideoList extends HttpServlet {
         pw.close();
     }
  
-    public String[] lerArquivosMP4(String pastaBase) {
-        // TODO: Procurar todos os arquivos .mp4 na pasta base
-        return new String [] {"Onibus vai derrapar a a a a.mp4"};
+    public Set<String> lerArquivosMP4(String pastaBase) {
+         return Stream.of(new File(pastaBase).listFiles())
+                .filter(file -> (!file.isDirectory()) && (file.getName().endsWith(".mp4")))
+                .map(File::getName)
+                .collect(Collectors.toSet());
     }
 
     public String acharArquivoDeImagem(String nome, String pastaBase) {
