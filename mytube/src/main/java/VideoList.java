@@ -53,10 +53,14 @@ public class VideoList extends HttpServlet {
     }
 
     public String acharArquivoDeImagem(String nome, String pastaBase) {
+        try {
         return Stream.of(new File(pastaBase).listFiles())
-                .filter(file -> (file.getName().equals(nome + ".jpg")) || file.getName().equals(nome + ".png"))
+                .filter(file -> (file.getName().equals(nome + ".jpg")) || (file.getName().equals(nome + ".png")))
                 .map(File::getName)
                 .findFirst()
                 .orElse(null);
+            } catch (NullPointerException e) {
+                return null;
+            }
     }
 }
