@@ -25,9 +25,9 @@ public class VideoList extends HttpServlet {
             JSONObject jo = new JSONObject();
 
             // Procura por algum arquivo .jpg ou .png que tenha o mesmo nome
-            String thumbnailPath = acharArquivoDeImagem(videoName.replace(".mp4",""),"");
+            String thumbnailPath = acharArquivoDeImagem(videoName.replace(".mp4",""),videoPath);
 
-            jo.put("miniature_link", "mini.jpg");
+            jo.put("miniature_link", "notfound.jpg");
             if (thumbnailPath != null){
                 jo.put("miniature_link", "thumbs?" + thumbnailPath.replace(" ","+"));
             }
