@@ -13,20 +13,40 @@ public class VideoList extends HttpServlet {
         response.setContentType("application/json");
 
         JSONArray ja = new JSONArray();
-        JSONObject jo = new JSONObject();
         JSONObject toSend = new JSONObject();
+        
+        String[] videoList = lerArquivosMP4("");
 
-        jo.put("video_link", "videos?Onibus+vai+derrapar+a+a+a+a.mp4");
-		jo.put("miniature_link", "mini.jpg");
-		jo.put("titulo", "Onibus vai derrapar a a a a");
+        for (String videoName : videoList) {
+            JSONObject jo = new JSONObject();
 
-        ja.put(jo);
+            // Procura por algum arquivo .jpg ou .png que tenha o mesmo nome
+            String thumbnailPath = acharArquivoDeImagem(videoName.replace(".mp4",""),"");
 
-        toSend.put("lista",ja);
+            jo.put("miniature_link", "mini.jpg");
+            if (thumbnailPath != null){
+                jo.put("miniature_link", thumbnailPath);
+            }
+            jo.put("titulo", videoName.replace(".mp4",""));
+            jo.put("video_link", "videos?" + videoName.replace(" ","+"));
+
+            ja.put(jo);
+
+            toSend.put("lista",ja);
+        }
 
         PrintWriter pw = response.getWriter();
 
         pw.println(toSend.toString());
         pw.close();
+    }
+ 
+    public String[] lerArquivosMP4(String pastaBase) {
+        // TODO: Procurar todos os arquivos .mp4 na pasta base
+        return new String [] {"Onibus vai derrapar a a a a.mp4"};
+    }
+
+    public String acharArquivoDeImagem(String nome, String pastaBase) {
+        return nome + ".png";
     }
 }

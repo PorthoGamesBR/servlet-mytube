@@ -24,3 +24,7 @@ O navegador faz um request, o servidor envia o que o navegador pediu naquele end
 # Comando para usar Maven
 
 ../apache-maven-3.9.9/bin/mvn.cmd
+
+# Como as thumbnails funcionam
+
+O sistema vai procurar na mesma pasta uma imagem que tenha o mesmo nome do video, em png ou jpg, e enviar o link para o servlet de thumbnails
