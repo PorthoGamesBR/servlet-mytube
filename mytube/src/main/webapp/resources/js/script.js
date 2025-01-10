@@ -21,9 +21,9 @@ async function getVideos() {
       
       listaDeVideos.forEach((element) => {
         let divListElement = document.createElement('div');
-        divListElement.setAttribute("class","flex-row");
         let aVideoLink = document.createElement('a')
         aVideoLink.setAttribute("href","javascript:openVideo('" + element["video_link"] + "')");
+        aVideoLink.setAttribute("class","flex-row");
         let imgMiniature = document.createElement("img");
         imgMiniature.setAttribute("class","miniature");
         imgMiniature.setAttribute("src",element["miniature_link"]);
