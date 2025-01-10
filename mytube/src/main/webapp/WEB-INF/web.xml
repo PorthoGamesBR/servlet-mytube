@@ -30,4 +30,13 @@
     <servlet-name>video_list</servlet-name>
     <url-pattern>/video_list</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>thumbs</servlet-name>
+    <servlet-class>Thumbnails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>thumbs</servlet-name>
+    <url-pattern>/thumbs</url-pattern>
+  </servlet-mapping>
 </web-app>

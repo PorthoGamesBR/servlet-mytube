@@ -29,7 +29,7 @@ public class VideoList extends HttpServlet {
 
             jo.put("miniature_link", "mini.jpg");
             if (thumbnailPath != null){
-                jo.put("miniature_link", thumbnailPath);
+                jo.put("miniature_link", "thumbs?" + thumbnailPath.replace(" ","+"));
             }
             jo.put("titulo", videoName.replace(".mp4",""));
             jo.put("video_link", "videos?" + videoName.replace(" ","+"));
@@ -53,6 +53,10 @@ public class VideoList extends HttpServlet {
     }
 
     public String acharArquivoDeImagem(String nome, String pastaBase) {
-        return nome + ".png";
+        return Stream.of(new File(pastaBase).listFiles())
+                .filter(file -> (file.getName().equals(nome + ".jpg")) || file.getName().equals(nome + ".png"))
+                .map(File::getName)
+                .findFirst()
+                .orElse(null);
     }
 }
