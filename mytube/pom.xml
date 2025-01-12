@@ -6,7 +6,7 @@
 
   <groupId>com.mytube</groupId>
   <artifactId>mytube</artifactId>
-  <version>1.0-pre-alpha</version>
+  <version>1.1-pre-alpha</version>
   <packaging>war</packaging>
 
   <name>mytube Maven Webapp</name>
