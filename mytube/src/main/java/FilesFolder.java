@@ -12,6 +12,7 @@ public class FilesFolder {
             filesFolder = appProps.getProperty("files.location");
         } catch (IOException e) {
             e.printStackTrace();
+            throw new RuntimeException("Arquivo app.properties não encontrado");
         }
         
     }
