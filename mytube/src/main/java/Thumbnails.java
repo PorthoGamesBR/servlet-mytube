@@ -4,8 +4,8 @@ import java.io.*;
 
 public class Thumbnails extends HttpServlet {
 
-    // TODO: Pegar esse path de uma variavel configuravel pelo usuario, como variável de ambiente
-    public String thumbPath = "/home/portho/Downloads/";
+    FilesFolder ff = new FilesFolder();
+    String thumbPath = ff.filesFolder;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String imageName = request.getQueryString();
@@ -18,7 +18,7 @@ public class Thumbnails extends HttpServlet {
             response.sendError(404);
             return;
         }
-        
+
         ServletOutputStream out = response.getOutputStream();
         FileInputStream fin = new FileInputStream(thumbPath + imageName.replace("+"," "));
 

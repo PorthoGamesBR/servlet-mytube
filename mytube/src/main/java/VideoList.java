@@ -11,7 +11,8 @@ import org.json.JSONArray;
 
 public class VideoList extends HttpServlet {
 
-    public String videoPath = "/home/portho/Downloads/";
+    FilesFolder ff = new FilesFolder();
+    public String videoPath = ff.filesFolder;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
