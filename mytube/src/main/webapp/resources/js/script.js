@@ -36,11 +36,11 @@ async function getVideos() {
     });
 }
 
-function openVideo(videoLink, videoTitle) {
+function openVideo(videoLink, title) {
     let videoPlayer = document.getElementById("video-player");
     let videoSource = document.getElementById("video-source");
     let videoTitle = document.getElementById("video-title");
-    videoTitle.innerHTML = videoTitle;
+    videoTitle.innerHTML = title;
     videoSource.setAttribute('src', videoLink);
     videoPlayer.load();
 }
