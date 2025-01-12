@@ -20,7 +20,7 @@ public class FilesFolder {
         }
 
         try {
-            FileInputStream fi = new FileInputStream("app.properties");
+            FileInputStream fi = new FileInputStream(finalPath + "/app.properties");
             appProps.load(fi);
             filesFolder = appProps.getProperty("files.location");
         } catch (IOException e) {
