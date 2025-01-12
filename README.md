@@ -29,10 +29,18 @@ Instalação do Maven
 Dar exemplos
 ```
 
+Configurando a pasta base dos arquivos
+
+```
+// Em mytube\src\main\resources, procure o arquivo app.properties 
+
+// Altere a propriedade files.location para o path aonde os vídeos e thumbnails vão ficar
+```
+
 Criando o arquivo WAR
 
 ```
-    // Uma vez que tenha o Maven instalado, vá para a pasta mytube e execute o comando
+    // Uma vez que tenha o Maven instalado e configurado o projeto, vá para a pasta mytube e execute o comando
 
     mvn clean package
 
