@@ -22,7 +22,7 @@ async function getVideos() {
       listaDeVideos.forEach((element) => {
         let divListElement = document.createElement('div');
         let aVideoLink = document.createElement('a')
-        aVideoLink.setAttribute("href","javascript:openVideo('" + element["video_link"] + "')");
+        aVideoLink.setAttribute("href","javascript:openVideo('" + element["video_link"] + "','" +  element["titulo"] + "')");
         aVideoLink.setAttribute("class","flex-row");
         let imgMiniature = document.createElement("img");
         imgMiniature.setAttribute("class","miniature");
@@ -36,9 +36,11 @@ async function getVideos() {
     });
 }
 
-function openVideo(videoLink) {
+function openVideo(videoLink, videoTitle) {
     let videoPlayer = document.getElementById("video-player");
     let videoSource = document.getElementById("video-source");
+    let videoTitle = document.getElementById("video-title");
+    videoTitle.innerHTML = videoTitle;
     videoSource.setAttribute('src', videoLink);
     videoPlayer.load();
 }
