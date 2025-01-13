@@ -44,6 +44,8 @@
   <web-resource-collection>
         <web-resource-name>mytube</web-resource-name>
         <url-pattern>/*</url-pattern>
+        <http-method>GET</http-method>
+        <http-method>POST</http-method>
         <auth-constraint>
           <role-name>USER</role-name>
         </auth-constraint>
