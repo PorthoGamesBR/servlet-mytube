@@ -43,7 +43,7 @@
  <security-constraint>
   <web-resource-collection>
         <web-resource-name>mytube</web-resource-name>
-        <url-pattern>*</url-pattern>
+        <url-pattern>/*</url-pattern>
         <auth-constraint>
           <role-name>USER</role-name>
         </auth-constraint>
