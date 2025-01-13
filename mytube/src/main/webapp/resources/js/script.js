@@ -1,7 +1,7 @@
 console.log("Hello World")
 
 var listaDeVideos = []
-const videoServerLink = "/mytube/video_list"
+const videoServerLink = "video_list"
 
 async function getVideos() {
     try {
