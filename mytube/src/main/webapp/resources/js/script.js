@@ -1,7 +1,7 @@
 console.log("Hello World")
 
 var listaDeVideos = []
-const videoServerLink = "http://127.0.0.1:8080/mytube/video_list"
+const videoServerLink = "/mytube/video_list"
 
 async function getVideos() {
     try {
