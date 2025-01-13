@@ -10,6 +10,7 @@ Pagina de visualização dos arquivos no meu servidor web
     - Thumbnails [x]
     - FTP para carregar os videos [x]
 - Conexão : As portas IP do meu proprio PC e rede serão usadas. Para pegar o IP global atual do PC podemos usar alguma API ou serviço
+    - Para a segurança, antes do deploy, teremos um sistema de login e usuários controlados pelo próprio servidor (Especificações no web.xml)
 - Pagina : Pagina simples em HTML + CSS + JS
     - script.js faz o request para conseguir a lista de videos do servidor e montar a lista de videos lateral, muda e da load na fonte do video ao clicar em um dos videos laterais [x]
 
