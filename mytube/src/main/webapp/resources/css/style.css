@@ -22,6 +22,20 @@ div.flex-row  {
     justify-content: space-around;
 }
 
+div.flex-row#main-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+@media only screen and (max-width: 600px) {
+    div.flex-row#main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+    }
+}
+
 div.flex-column {
     display: flex;
     flex-direction: column;
