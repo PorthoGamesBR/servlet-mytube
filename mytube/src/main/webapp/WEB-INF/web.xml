@@ -54,7 +54,7 @@
 
    <!-- Default login configuration uses form-based authentication -->
    <login-config>
-      <auth-method>BASIC</auth-method>
+      <auth-method>FORM</auth-method>
    </login-config>
 
  <security-role>
