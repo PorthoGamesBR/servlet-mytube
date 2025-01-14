@@ -5,7 +5,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -47,10 +46,15 @@ public class VideoList extends HttpServlet {
     }
  
     public Set<String> lerArquivosMP4(String pastaBase) {
+        try {
          return Stream.of(new File(pastaBase).listFiles())
                 .filter(file -> (!file.isDirectory()) && (file.getName().endsWith(".mp4")))
                 .map(File::getName)
                 .collect(Collectors.toSet());
+        }
+        catch (NullPointerException e) {
+            throw new NullPointerException("Erro ao ler arquivos de vídeo na pasta " + pastaBase);
+        }
     }
 
     public String acharArquivoDeImagem(String nome, String pastaBase) {
